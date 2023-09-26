@@ -1,0 +1,25 @@
+**********************************************************************
+Class Bindings
+**********************************************************************
+
+Prepare css for particular component
+
+dashboard.component.css
+--------------------------
+
+.inStock{
+
+/*
+	YOUR CSS HERE
+*/
+
+}
+
+goto>dashboard.component.html file
+
+dashboard.component.html
+----------------------------------
+
+<p [class.inStock]="true"></p>
+
+

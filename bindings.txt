@@ -48,3 +48,34 @@ dashboard.component.html file
 
 <p [style.font-weight]="we">Hello</p>
 
+
+*************************************************************************
+EVENT BINDING
+*************************************************************************
+
+dashboard.component.html
+---------------------------------
+
+<div class="container">
+    <button class="btn btn-primary" (click)="show()">Show Div</button>
+    
+    <div *ngIf="flag" style="background-color: yellowgreen;">
+        This is My Div and you have successfully implemented EVENT BINDING
+    </div>
+
+
+
+
+</div>
+
+
+
+dashboard.coponent.ts
+------------------------
+
+flag=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
+------------------------

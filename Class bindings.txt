@@ -23,3 +23,28 @@ dashboard.component.html
 <p [class.inStock]="true"></p>
 
 
+
+************************************************************************
+STYLE BINDING
+************************************************************************
+
+
+goto> any component's ts file
+
+dashboard.component.ts
+-----------------------
+
+
+//declare one variable like
+
+we:number=1000;
+
+
+-----------------------
+
+dashboard.component.html file
+-----------------------------
+
+
+<p [style.font-weight]="we">Hello</p>
+

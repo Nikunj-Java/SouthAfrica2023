@@ -1,0 +1,36 @@
+/* navigation.component.css */
+.navbar {
+    background-color: yellowgreen;
+    color: white;
+    justify-content: center
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-item a:hover {
+    color: red;
+  }
+  
+  .active {
+    border-bottom: 2px solid #ff9900;
+  }
+  

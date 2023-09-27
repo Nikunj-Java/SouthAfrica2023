@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>Component Level Interaction</h1>
+  <h5>Parent Sending Data To Child</h5>
+
+  <input type="text" (keyup)="0" #ptext>
+
+  <h5>Value Coming from Child</h5> <b>{{cdata}}</b>
+
+</div>
+
+<app-child [pdata]="ptext.value"  (cevent)="cdata=$event"   ></app-child>

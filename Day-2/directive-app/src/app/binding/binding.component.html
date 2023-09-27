@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Two Way Bindings</h2>
+    
+    <h3> Welcome!! {{name}}</h3>
+
+    <input type="text" placeholder="Enter your Name" [value]="name">
+    <hr>
+    <h3>using NgModel -FormsModule</h3>
+    <p>To  use ngModel , we need to import FormsModule in app.module.ts file</p>
+
+
+    <input type="text" placeholder="Enter Your Name" [(ngModel)]="name">
+
+    <button class="btn btn-primary" (click)="showAlert()">Create AlertBox</button>
+
+</div>

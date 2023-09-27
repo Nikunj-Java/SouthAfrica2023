@@ -1,0 +1,66 @@
+<div class="container">
+    <h2>Directive Examples</h2>
+    <p>There are two types of directive we need to learn in angular</p>
+    <ol>
+        <li>Structural Directive</li>
+        <li>Custom Directives</li>
+    </ol>
+    <h3>1. Structural Directives</h3>
+    <p>There are three types of Structural Directive we need to learn in Angular</p>
+
+    <ol>
+        <li>ngFor</li>
+        <li>ngIf</li>
+        <li>ngSwitch</li>
+    </ol>
+</div>
+
+<div class="container">
+    <h3>1. ngFor Directive</h3>
+    <p>This is used for iterating an items in a loop like for loop</p>
+
+    <table class="table table-striped table-bordered table-dark">
+        <thead>
+            <tr>
+                <th>ID</th><th>NAME</th><th>EMAIL</th><th>COUNTRY</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let p of products">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.email}}</td>
+                <td>{{p.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<div class="container">
+    <h3>2. ngIf Directive </h3>
+    <p>ngif is used for checking the condition just like if and else</p>
+
+    <button class="btn btn-success" (click)="showMe()">Click Me</button>
+   
+    <div *ngIf="flag" style="background-color: yellowgreen;">
+        ngIf Example where the Div is goig to appear and disappear,
+        <p>This is my div,Click on Button to Collaps and Expand</p>
+    </div>
+</div>
+
+<div class="container">
+    <h3>3.ngSwitch Directive</h3>
+    <p>Here we  are going to check which day is today using ngSwitch Directive</p>
+
+    <div [ngSwitch]="day" style="background-color: aqua;">
+        <div *ngSwitchCase="0">Today is Sunday</div>
+        <div *ngSwitchCase="1">Today is Monday</div>
+        <div *ngSwitchCase="2">Today is Tuesday</div>
+        <div *ngSwitchCase="3">Today is Wednesday</div>
+        <div *ngSwitchCase="4">Today is Thursday</div>
+        <div *ngSwitchCase="5">Today is Friday</div>
+        <div *ngSwitchCase="6">Today is Saturday</div>
+    </div>
+</div>

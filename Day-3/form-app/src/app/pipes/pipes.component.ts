@@ -1,5 +1,6 @@
-import { DatePipe } from '@angular/common';
+ 
 import { Component } from '@angular/core';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'app-pipes',
@@ -18,4 +19,5 @@ export class PipesComponent {
 
   cust:string="Welcome to the world of Custom Pipes";
 
+  utc: DateTime =DateTime.utc();
 }

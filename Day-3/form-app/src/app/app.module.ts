@@ -8,6 +8,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RformComponent } from './rform/rform.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipe } from './CustomPipe';
+ 
+ 
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { CustomPipe } from './CustomPipe';
     TformComponent,
     RformComponent,
     PipesComponent,
-    CustomPipe
+    CustomPipe,
+     
   ],
   imports: [
     BrowserModule,

@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { TformComponent } from './tform/tform.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RformComponent } from './rform/rform.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipe } from './CustomPipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TformComponent,
-    RformComponent
+    RformComponent,
+    PipesComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

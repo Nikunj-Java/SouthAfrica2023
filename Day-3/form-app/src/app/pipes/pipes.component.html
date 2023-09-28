@@ -1,0 +1,103 @@
+<div class="container" style="background-color: lightblue;">
+
+    <h2>Pipes Example</h2>
+    <hr>
+    <p>There are Two Types of pipes available in angular</p>
+    <ol>
+        <li>Inbuilt-Pipe</li>
+        <li>Custom Pipe</li>
+    </ol>
+    <div class="container" style="background-color: lightslategrey;">
+
+        <h3>1. Inbuilt Pipe</h3>
+        <hr>
+        <h4>A. String Pipe</h4>
+        <p><b>UPPERCASE:</b>{{name | uppercase}}</p>
+        <hr>
+        <p><b>lowercase:</b>{{name | lowercase}}</p>
+    </div>
+
+
+    <div class="container" style="background-color: yellowgreen">
+
+        <h4>B. Number Pipe</h4>
+        <p><b>pi:</b>{{pi | number:'5.5-5'}}</p>
+        <hr>
+
+        <p><b>pi:</b>{{pi | number:'.3-3'}}</p>
+        <hr>
+
+        <p><b>pi:</b>{{pi | number:'.10-10'}}</p>
+        <hr>
+        
+    </div>
+
+    <div class="container" style="background-color: lightblue">
+
+        <h4>C. Currency Pipe</h4>
+        <p><b>USD:</b>{{a | currency : 'USD':true: '3.3-3'}}</p>
+        <hr>
+
+        <p><b>USD:</b>{{a | currency : 'USD':false: '.3-3'}}</p>
+        <hr>
+
+
+        <p><b>EURO:</b>{{b | currency : 'EURO':true: '.3-3'}}</p>
+        <hr>
+
+        <p><b>EURO:</b>{{b | currency : 'EURO':false}}</p>
+        <hr>
+
+        <p><b>INR:</b>{{b | currency : 'INR':true: '.3-3'}}</p>
+        <hr>
+
+        <p><b>INR:</b>{{b | currency : 'INR':false}}</p>
+        <hr>
+ 
+    </div>
+
+    
+    <div class="container" style="background-color: yellowgreen">
+
+        <h4>D. Date Pipe</h4>
+        <p><b>Date:</b>{{today}}</p>
+        <hr>
+
+        <p><b>Date:</b>{{today | date}}</p>
+        <hr>
+
+        <p><b>Date:</b>{{today | date: 'dd/MM/yyyy'}}</p>
+        <hr>
+
+        
+    </div>
+
+
+    <div class="container" style="background-color: lightblue">
+
+        <h4>E. Object Pipe</h4>
+        <p><b> Without JSON pipe:</b>{{object}}</p>
+        <hr>
+
+        <p><b> Without JSON pipe:</b>{{object | json}}</p>
+        <hr>
+
+
+    </div>
+
+
+    
+</div>
+<div class="container" style="background-color: yellowgreen">
+
+    <h4>2. Custom Pipe</h4>
+    <p><b> Original String:</b>{{cust}}</p>
+    <hr>
+
+    <p><b> Custom pipe:</b>{{cust | changestring:' '}}</p>
+    <hr>
+
+    
+
+
+</div>

@@ -74,6 +74,24 @@
                 </div>
 
 
+                 <!--Checkboc-->
+                 <div class="form-group">
+                  
+                     
+                    <input type="checkbox" formControlName="check" 
+                    [ngClass]="{'is-invalid':submitted && form['check'].errors}">Agree Terms and Conditions
+                
+                    <!--Error Message-->
+                    <div *ngIf="submitted && form['check'].errors" class="invalid-feedback">
+                        
+                        Click on check box
+                        
+                        
+                    </div>
+
+                </div>
+
+
                 <button type="submit" class="btn btn-primary">Register</button>
             </form>
         </div>

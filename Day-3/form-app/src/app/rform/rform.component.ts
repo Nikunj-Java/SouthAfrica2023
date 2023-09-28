@@ -22,6 +22,7 @@ export class RformComponent {
     this.registerForm=this.builder.group({
       firstname:['',Validators.required],
       lastname:['',Validators.required],
+      check:[false,[Validators.requiredTrue]],
       email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(8)]],
     })

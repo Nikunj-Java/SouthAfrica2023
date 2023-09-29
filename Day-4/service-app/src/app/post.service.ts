@@ -7,7 +7,12 @@ import { Observable} from 'rxjs';
 })
 export class PostService {
 
-  private apiUrl="http://localhost:3000/posts"
+
+  //to install json server
+    //npm i -g json-server
+  //to start json server
+    //json-server --watch db.json
+  private apiUrl="http://localhost:3000/posts";
 
   constructor(private http:HttpClient) { }
 

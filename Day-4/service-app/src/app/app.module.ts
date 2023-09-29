@@ -7,19 +7,21 @@ import { UserComponent } from './user/user.component';
 import { MydataService } from './mydata.service';
 import { HttpComponent } from './http/http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CrudComponent } from './crud/crud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    HttpComponent
+    HttpComponent,
+    CrudComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [MydataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

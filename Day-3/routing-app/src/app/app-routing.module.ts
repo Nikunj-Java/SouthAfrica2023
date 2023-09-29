@@ -12,13 +12,12 @@ const routes: Routes = [
   {path:"about",component:AboutusComponent},
   {path:"contact",component:ContactusComponent},
   {path:"gallary",component:GalaryComponent,children:[
-    {path:'',redirectTo:"child-a",pathMatch:'full'},
-    {path:"child-a",component:ChildAComponent},
-    {path:"child-b",component:ChildBComponent}
-  ]
+    {path:'',redirectTo:"child-a",pathMatch:"full"},
+    {path:'child-a',component:ChildAComponent},
+    {path:'child-b',component:ChildBComponent}
+  ]}
   
   
-  },
 ];
 
 @NgModule({

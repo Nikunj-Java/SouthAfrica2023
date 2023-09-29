@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/service-app",
             "index": "src/index.html",
@@ -43,6 +43,7 @@
                   "maximumError": "4kb"
                 }
               ],
+              
               "outputHashing": "all"
             },
             "development": {
